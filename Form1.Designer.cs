@@ -1,4 +1,4 @@
-﻿namespace ITMO.Course124.Exercise3._4
+﻿namespace ITMO.Course124.Exercise4._1.TestStandartDialog
 {
     partial class Form1
     {
@@ -28,111 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.validatingClass3 = new ITMO.Course124.Exercise3._4.ValidatingClass();
-            this.validatingClass2 = new ITMO.Course124.Exercise3._4.ValidatingClass();
-            this.validatingClass1 = new ITMO.Course124.Exercise3._4.ValidatingClass();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.formatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundColorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 117);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ТЕЛЕФОН";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileToolStripMenuItem,
+            this.formatToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // label2
+            // FileToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "ИМЯ";
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SaveAsToolStripMenuItem,
+            this.openToolStripMenuItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            this.FileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.FileToolStripMenuItem.Text = "&File";
             // 
-            // label3
+            // SaveAsToolStripMenuItem
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "ФАМИЛИЯ";
+            this.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem";
+            this.SaveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SaveAsToolStripMenuItem.Text = "&Save as";
+            this.SaveAsToolStripMenuItem.Click += new System.EventHandler(this.SaveAsToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(330, 50);
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 24);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(221, 173);
-            this.richTextBox1.TabIndex = 6;
+            this.richTextBox1.Size = new System.Drawing.Size(800, 426);
+            this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
-            // button1
+            // formatToolStripMenuItem
             // 
-            this.button1.Location = new System.Drawing.Point(42, 173);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 50);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.formatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backgroundColorToolStripMenuItem,
+            this.fontToolStripMenuItem});
+            this.formatToolStripMenuItem.Name = "formatToolStripMenuItem";
+            this.formatToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.formatToolStripMenuItem.Text = "&Format";
             // 
-            // validatingClass3
+            // backgroundColorToolStripMenuItem
             // 
-            this.validatingClass3.Location = new System.Drawing.Point(145, 114);
-            this.validatingClass3.Name = "validatingClass3";
-            this.validatingClass3.Size = new System.Drawing.Size(137, 20);
-            this.validatingClass3.TabIndex = 10;
+            this.backgroundColorToolStripMenuItem.Name = "backgroundColorToolStripMenuItem";
+            this.backgroundColorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backgroundColorToolStripMenuItem.Text = "&Background color";
+            this.backgroundColorToolStripMenuItem.Click += new System.EventHandler(this.backgroundColorToolStripMenuItem_Click);
             // 
-            // validatingClass2
+            // fontToolStripMenuItem
             // 
-            this.validatingClass2.Location = new System.Drawing.Point(145, 82);
-            this.validatingClass2.Name = "validatingClass2";
-            this.validatingClass2.Size = new System.Drawing.Size(137, 20);
-            this.validatingClass2.TabIndex = 9;
+            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fontToolStripMenuItem.Text = "&Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
-            // validatingClass1
+            // openToolStripMenuItem
             // 
-            this.validatingClass1.Location = new System.Drawing.Point(145, 50);
-            this.validatingClass1.Name = "validatingClass1";
-            this.validatingClass1.Size = new System.Drawing.Size(137, 20);
-            this.validatingClass1.TabIndex = 8;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 281);
-            this.Controls.Add(this.validatingClass3);
-            this.Controls.Add(this.validatingClass2);
-            this.Controls.Add(this.validatingClass1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SaveAsToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private ValidatingClass validatingClass1;
-        private ValidatingClass validatingClass2;
-        private ValidatingClass validatingClass3;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem formatToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backgroundColorToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
