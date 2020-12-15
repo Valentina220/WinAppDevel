@@ -661,7 +661,7 @@ namespace SimpleCalculator
         private void èíæåíåğíûéToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CalcEngin Engin = new CalcEngin();
-            Engin.Show();
+            Engin.Show();       
         }
     }
 }
